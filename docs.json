@@ -18,6 +18,12 @@
             "pages": [
               "index"
             ]
+          },
+          {
+            "group": "Guides",
+            "pages": [
+              "guides/guides/install-averfo"
+            ]
           }
         ]
       }
