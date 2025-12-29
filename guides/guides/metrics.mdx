@@ -1,0 +1,162 @@
+---
+title: "Metrics"
+---
+
+## What Metrics Averfo Collects (and What We Don’t)
+
+At **Averfo**, we take a strict **data-minimisation approach**: we collect **only what is necessary** to provide meaningful analytics — and nothing more.
+
+Below is a transparent breakdown of what Averfo **does and does not collect** from your website visitors, and why.
+
+## Our Privacy Principles
+
+- No cookies. Ever.
+- No IP addresses (not stored, not hashed).
+- No fingerprinting or cross-site tracking.
+- No tracking across sessions or websites.
+- Fully GDPR- and ePrivacy-friendly by default.
+- No cookie consent banners required.
+
+## Cookies & Similar Technologies
+
+###  ❌ We do **not** use cookies
+
+Averfo does **not** set cookies or use similar storage technologies, including:
+
+- Cookies (first-party or third-party)
+- Local storage
+- Session storage
+- Browser fingerprinting
+- IP address hashing
+
+These technologies are commonly used to track users across pages or visits. We intentionally avoid them to protect visitor privacy.
+
+## IP Addresses
+
+###  ❌ We do **not** collect or store IP addresses
+
+IP addresses are dropped immediately and are **never**:
+
+- Stored
+- Logged
+- Hashed
+- Used for analytics
+- Used for geolocation
+
+Requests are processed without retaining IP data, ensuring visitors cannot be identified — even indirectly.
+
+## Unique Page Views
+
+###  ✅ We detect **unique views**, without cookies or IPs
+
+We measure whether a page view is _unique_ without identifying visitors.
+
+Instead of cookies or IP addresses, Averfo determines uniqueness using **referrer domain logic**:
+
+- If a visitor navigates within the same site, the view is considered **non-unique**
+- If a visitor arrives from a different domain, it is considered **unique**
+
+This approach avoids personal data entirely while still providing accurate visit metrics.
+
+## Timestamps
+
+###  ✅ We collect timestamps
+
+We store timestamps to generate time-based analytics such as:
+
+- Hourly trends
+- Daily and monthly graphs
+- Performance comparisons over time
+
+Timestamps are not tied to individuals and are used solely for aggregated reporting.
+
+## User Agents
+
+###  ✅ We collect **anonymised** user agents
+
+User agents help us:
+
+- Detect and exclude bots and crawlers
+- Count browsers and device types
+
+We **do not** use user agents for fingerprinting.
+
+As an extra anonymization we:
+
+- Make sure detailed version numbers are truncated
+- Long numeric identifiers are replaced with zeros
+
+## Country
+
+### ✅ We collect country-level data (without IPs)
+
+Instead of IP-based geolocation, Averfo determines country using the visitor’s **time zone**.
+
+This method:
+
+- Avoids IP address usage entirely
+- Identifies country only (no city or region)
+- Automatically updates when devices change location
+
+## URLs
+
+###  ✅ We partially store URLs
+
+We store only the essential parts of a URL:
+
+- Protocol `https`)
+- Hostname `example.com`)
+- Path `/page`)
+
+We **do not store**:
+
+- Query parameters
+- Fragments `#`)
+- Search terms or identifiers
+
+**Example:**
+
+`https://example.com/page?search=test#top`
+
+**Stored as:**
+
+`/page`
+
+## Referrers
+
+###  ✅ We partially store referrers
+
+Referrers help answer: _“Where did this visitor come from?”_
+
+**We collect:**
+
+- Referrer domains (stored using the same partial URL logic)
+
+This allows you to see traffic sources without exposing personal data.
+
+## Time on Page
+
+### ✅ We measure time on page
+
+We track how long a page is actively viewed:
+
+- Time is counted only when the page is visible
+- Background or hidden tabs are excluded
+
+This provides more accurate engagement metrics.
+
+## Summary
+
+Averfo proves that **useful analytics do not require invasive tracking**.
+
+**We collect:**
+
+- Only what’s needed
+- Only in aggregated form
+- Without cookies, IPs, or identifiers
+
+**And we don’t collect:**
+
+- Personal data of visitors
+- Cross-site tracking signals
+- Persistent identifiers
