@@ -21,14 +21,11 @@ To trigger an event, you must call it via a small Javascript script - don't worr
 
    ```javascript button_click_event.js
    <script>
-     document.addEventListener('DOMContentLoaded', function () {
-   	//Make sure to have a button with id="signup_btn"
-       var signupBtn = document.getElementById('signup_btn');
-   
-       signupBtn.addEventListener('click', function () {
-         sendEvent('Signup');
+       document.addEventListener('click', function (e) {
+           if (e.target.closest('#signup_btn')) {
+               window.averfo?.track?.('Signup');
+           }
        });
-     });
    </script>
    ```
 4. Now try and click the button and watch your events tracking within the Averfo website dashboard.
