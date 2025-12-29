@@ -1,0 +1,35 @@
+---
+title: "Setup Events"
+---
+
+Events allow you to track moments when a user is on your website. For example; clicking a signup button or loading from an advert.
+
+Averfo makes it simple to setup, but first, you must setup the custom event under `Website Settings`
+
+1. Navigate to your `Website Settings` - Find under your [website](https://averfo.test/websites) page.
+2. Click `Events`.
+3. Press the`Create event` button.
+4. Add your `Event Name` - E.g; `Signup` and save.
+
+## Triggering Events
+
+To trigger an event, you must call it via a small Javascript script - don't worry, it's pretty simple!
+
+1. First, make sure you have [Installed Averfo](/guides/guides/install-averfo) successfully on your site and is called in the `head` of your website before the scripts below.
+2. Find your `<footer>`, closing `</body>` tag or `script manager` if you are using a CMS platform.
+3. Add in the following script:
+
+   ```javascript
+   <script>
+     document.addEventListener('DOMContentLoaded', function () {
+   	//Make sure to have a button with id="signup_btn"
+       var signupBtn = document.getElementById('signup_btn');
+   
+       signupBtn.addEventListener('click', function () {
+         sendEvent('Signup');
+       });
+     });
+   </script>
+   ```
+4. Now try and click the button and watch your events tracking within the Averfo website dashboard.
+5. Once you see events coming in. It's time to setup Goal funnels for further analysis and reporting.

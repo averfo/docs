@@ -22,7 +22,8 @@
           {
             "group": "Guides",
             "pages": [
-              "guides/guides/install-averfo"
+              "guides/guides/install-averfo",
+              "guides/guides/setup-events"
             ]
           }
         ]
