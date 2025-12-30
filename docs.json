@@ -24,9 +24,10 @@
             "pages": [
               "guides/guides/install-averfo",
               "guides/guides/setup-events",
-              "guides/guides/exclude-ip-addresses",
               "guides/guides/reports",
-              "guides/guides/metrics"
+              "guides/guides/metrics",
+              "guides/guides/exclude-ip-addresses",
+              "guides/guides/metrics-copied-1"
             ]
           }
         ]
